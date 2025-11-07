@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Aron | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Portfolio de Aron</h1>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- Modal Container -->
+<section class="bio-section fade-in">
+  <!-- Particle Background -->
+  <div class="particle-background">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Glass Card -->
+  <div class="bio-card">
+    <img src="c:\Users\Juliet\Downloads\formal port prof.jpg" alt="Aron Kent Punasen Gavino" class="bio-pic">
+    <h2>Hello, I’m <span>Aron Kent Punasen Gavino</span></h2>
+    <p>
+      I was born on <strong>June 5, 2007</strong> at <strong>Benguet General Hospital</strong> and I currently live in the beautiful city of <strong>Baguio, Philippines</strong>, a place known for its cool weather and warm people.
+    </p>
+    <p>
+      Since I was young, I’ve always been curious and creative. I loved <strong>baking pastries</strong> while following online tutorials and experimenting at home. What started as a hobby soon became one of my greatest passions. Today, I can confidently bake a wide range of pastries without fear of failure, and each creation is a reflection of my patience, creativity, and love for the craft.
+    </p>
+    <p>
+      I also have a deep interest in <strong>fashion and pageantry</strong>. Over the years, I’ve learned the art of walking gracefully in high heels. One of my favorite memories is when a close friend asked me to teach her how to do a <em>pasarela</em> or pageant walk during their intramurals in Grade 10, which reminded me how empowering it feels to share what I know.
+    </p>
+    <p>
+      Besides baking and fashion, I’m passionate about <strong>photography</strong> and <strong>sports</strong>. I represented my school in <strong>volleyball</strong> at a district meet. Although we didn’t win, the experience and friendships we made were unforgettable. These days, I play occasionally when I have time.
+    </p>
+    <p>
+      When I’m not baking or playing sports, I enjoy spending time playing <strong>online games</strong> like <em>Call of Duty</em> and <em>Mobile Legends</em>. Gaming teaches me teamwork, focus, and strategy, which also apply to real life.
+    </p>
+    <p>
+      Now that I’m <strong>18 years old</strong>, I’m focused on my studies and building a bright future. I dream of <strong>flying abroad</strong> someday and starting my own <strong>tech company in the United States</strong>, combining creativity and innovation to make a positive impact.
+    </p>
+  </div>
+</section>
+
+
+    <div class="page-navigation">
+        <a href="gallery.html" class="prev-btn">⟵ Previous</a>
+        <a href="index.html" class="home-btn">🏠 Home</a>
+        <a href="about.html" class="next-btn">Next ⟶</a>
+    </div>
+
+    <footer>
+        <p>© 2025 Aron Kent P. Gavino | All Rights Reserved</p>
+    </footer>
+    <script>
+  const modal = document.getElementById("bioModal");
+const closeBtn = document.querySelector(".close");
+const homeBtn = document.getElementById("homeBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+// Open modal (Home button example)
+homeBtn.onclick = () => {
+  modal.style.display = "block";
+  modal.classList.add("show");
+};
+
+// Close modal
+closeBtn.onclick = () => {
+  modal.style.display = "none";
+  modal.classList.remove("show");
+};
+
+// Optional: Previous / Next buttons to swap content
+prevBtn.onclick = () => {
+  // Replace with previous biography or section
+  alert("Previous section clicked");
+};
+
+nextBtn.onclick = () => {
+  // Replace with next biography or section
+  alert("Next section clicked");
+};
+
+// Close modal on outside click
+window.onclick = (e) => {
+  if(e.target === modal){
+    modal.style.display = "none";
+    modal.classList.remove("show");
+  }
+};
+
+</script>
+
+</body>
+
+</html>
